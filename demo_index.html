@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms Challenge</title>
+    <meta name="description" content="first challenge to create a form with different types of inputs">
+    <meta name="author" content="Elizabeth Hall">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<!--    The form should post to the url /signup/ -->
+
+<body>
+    <!--inline elements and which are attributes
+    <!--is there a syntax between <input> /> class, type, name, id, required ->-->
+    <form role="form" action="">
+        <header>
+            <img class="logo" src="images/logo.png">
+            <!--  center image positioning -->
+        </header>
+        <fieldset>
+            <!--           which element below sets the end point? -->
+            <legend>Sign Up</legend>
+            <h2>Sign Up</h2>
+            <label for="Email">Email</label>
+            <!-- form should validate the email field -->
+            <input type="email" name="user-email" placeholder="yourname@email.com" id="user-email" required />
+            <label for="Password">Password</label>
+            <input type="password" name="user-password" placeholder="124passW0r*" id="user-password" required />
+            <!-- <select name="" id=""></select>-->
+            <!--            style button with hover to green-->
+            <button type="submit">Sign Up</button>
+        </fieldset>
+    </form>
+    <footer>
+        <h3>Already have an account?</h3>
+        <!--            explain this directory abosulte versus relative ' /signup/ ' is that the same as an 'end point'-->
+        <a href="/login">Log In</a>
+    </footer>
+
+    <!--drop down select
+<section>
+    <p>Survey Question</p>
+    <input type="radio" name="feelings-2" id="ans-great-2" value="1"><label for="ans-great-2">Seriously great</label>
+    <input type="radio" name="feelings-2" id="ans-great-3" value="2">
+    <input type="radio" />
+    <select name="" id="">
+            <option value="Yes"></option>
+            <option value="No"></option>
+            <option value="Maybe"></option>
+</select>-->
+
+
+</body>
+
+</html>
