@@ -1,0 +1,80 @@
+* {
+    /*    double check the box model*/
+    box-sizing: border-box;
+}
+
+/*https://courses.thinkful.com/fewd-001v6/assignment/1.3.4*/
+
+/*Precendence*/
+
+body {
+    margin: 0;
+    font-size: 18px;
+    background-color: #298eea;
+    */ font-family: "Roboto", helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/*what style rule is being applied to the margin above the img logo */
+
+.logo {
+    /*    margin: auto CENTERS position block elements*/
+    margin: auto;
+    display: block;
+    height: 35px;
+    width: auto;
+
+}
+
+/*RULES OF THUMB
+selectors: class, type, id \
+the rule: if an element is part of the target, put it first. Then, chain together the classes you want to target.
+When selectors are combined they should be read from right to left.
+2 or more classes or target an element that is in two or more classes, put element first
+.foo.bar
+a.foo.bar
+multiple selectors with the same ruleset, separate your selectors with commas: .foo,.bar.,.gree
+https: //courses.thinkful.com/fewd-001v6/assignment/1.3.4*/
+
+.signup-form {
+    margin: auto;
+    width: 360px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: white;
+    /*    margin */
+}
+
+.signup-form p {
+    text-align: center;
+    width: 100%;
+    color: #565656;
+
+}
+
+.footer p:first-child {
+    color: black;
+
+}
+
+.footer {
+    border: 5px solid red;
+    text-align: center;
+}
+
+.footer a {
+    color: red;
+}
+
+/*is this chaining to target the input attribute*/
+
+/*do I need to wrap the Do You Have in a block element to center*/
+
+/*take the log in link out of the normal flow so it is positioned to the right of <p>*/
+
+/*stretch feature*/
