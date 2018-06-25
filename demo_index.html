@@ -12,21 +12,25 @@
 <!--    The form should post to the url /signup/ -->
 
 <body>
-    <!--removed: <forms> and <legend> elements. MDN forms don't have headers. HTML tried to render the img wrapped in <header>-->
+    <!--resolved center position by removing
+    <forms> which don't have <headers>-->
+    <!-- wrapped <form> in a div="signup-form"-->
+
     <header>
         <img class="logo" src="images/logo.png" alt="Analog by the Sea">
     </header>
     <div class="signup-form">
         <form role="form" action="./signup" method="post">
-            <!-- HTML fieldset element is used to group several controls as well as labels. to style input attrbutes use selectors input[type="text"] removed -->
-
+            <!--            <fieldset>-->
+            <!--removed leder and wrapped 'Sign Up' in a <p> tag-->
             <p>Sign Up</p>
             <label for="Email">Email</label>
             <input type="email" name="user-email" placeholder="yourname@gmail.com" id="user-email" required/>
             <label for="Password">Password</label>
             <input type="password" name="user-password" placeholder="124passW0r*" id="user-password" required/>
             <!--style button with hover to green-->
-            <button type="submit">Sign Up</button>
+            <button class="button" type="submit">Sign Up</button>
+            <!--            </fieldset>-->
         </form>
     </div>
     <footer class="footer" role="content-info">
