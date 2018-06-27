@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms Challenge</title>
+    <meta name="description" content="first challenge to create a form with different types of inputs">
+    <meta name="author" content="Elizabeth Hall">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<!--    The form should post to the url /signup/ -->
+
+<body>
+    <!--resolved center position by removing
+    <forms> which don't have <headers>-->
+    <!-- wrapped <form> in a div="signup-form"-->
+
+    <header>
+        <img class="logo" src="images/logo.png" alt="Analog by the Sea">
+    </header>
+    <div class="signup-form">
+        <form role="form" action="./signup" method="post">
+            <!-- removed<fieldset> resolved positioning and width of inputs-->
+            <!--removed leder and wrapped 'Sign Up' in a <p> tag-->
+            <p>Sign Up</p>
+            <label for="Email">Email</label>
+            <input type="email" name="user-email" placeholder="yourname@gmail.com" id="user-email" required/>
+            <label for="Password">Password</label>
+            <input type="password" name="user-password" placeholder="124passW0r*" id="user-password" required/>
+            <!--style button with hover to green-->
+            <button class="button" type="submit">Sign Up</button>
+
+            <!--            </fieldset>-->
+        </form>
+    </div>
+    <footer class="footer" role="content-info">
+        <p> Already have an account? <a href="/login">Log In</a>
+        </p>
+    </footer>
+</body>
+
+</html>
